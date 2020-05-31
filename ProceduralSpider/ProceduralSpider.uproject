@@ -1,0 +1,32 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "4.23",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "ProceduralSpider",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}, {
+            "Name": "ProceduralSpiderEditor",
+            "Type": "Editor",
+            "LoadingPhase":  "PostEngineInit"
+        }
+	],
+	"Plugins": [
+		{
+			"Name": "SteamVR",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Win32",
+				"Win64",
+				"Linux",
+				"Mac"
+			]
+		}
+	]
+}
