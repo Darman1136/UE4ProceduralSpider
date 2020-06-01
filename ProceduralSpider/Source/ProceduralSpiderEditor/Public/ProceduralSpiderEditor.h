@@ -7,10 +7,12 @@
 
 DECLARE_LOG_CATEGORY_EXTERN(ProceduralSpiderEditor, All, All)
 
-class FProceduralSpiderEditorModule: public IModuleInterface
-{
+class FProceduralSpiderEditorModule : public IModuleInterface {
 public:
 	virtual void StartupModule() override;
 	virtual void ShutdownModule() override;
 
+private:
+	template <typename T>
+	void AddVisualizer(FName ComponentClassName);
 };

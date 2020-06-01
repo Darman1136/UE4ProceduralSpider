@@ -7,12 +7,17 @@
 #include "ProceduralSpiderGameMode.generated.h"
 
 UCLASS(minimalapi)
-class AProceduralSpiderGameMode : public AGameModeBase
-{
+class AProceduralSpiderGameMode : public AGameModeBase {
 	GENERATED_BODY()
 
 public:
 	AProceduralSpiderGameMode();
+
+	bool IsDrawDebug() const { return DrawDebug; };
+
+protected:
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+		bool DrawDebug = false;
 };
 
 

@@ -4,12 +4,9 @@
 #include "ProceduralSpiderCharacter.h"
 #include "UObject/ConstructorHelpers.h"
 
-AProceduralSpiderGameMode::AProceduralSpiderGameMode()
-{
-	// set default pawn class to our Blueprinted character
+AProceduralSpiderGameMode::AProceduralSpiderGameMode() {
 	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnBPClass(TEXT("/Game/Character/SpiderCharacter"));
-	if (PlayerPawnBPClass.Class != NULL)
-	{
+	if (PlayerPawnBPClass.Class != NULL) {
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
 }
