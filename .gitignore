@@ -51,6 +51,7 @@ ProceduralSpider/Plugins/*/Binaries/*
 
 # Builds
 ProceduralSpider/Build/*
+Builds/
 
 # Whitelist PakBlacklist-<BuildConfiguration>.txt files
 !ProceduralSpider/Build/*/
